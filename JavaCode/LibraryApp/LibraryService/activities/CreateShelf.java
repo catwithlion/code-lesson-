@@ -1,14 +1,15 @@
-package process;
+package LibraryService.activities;
 
-import Entities.shelf;
+import LibraryService.shelf;
 
-public class createShelf {
+public class CreateShelf {
 
-    public shelf creating() {
+    public CreateShelf creating() {
         // take input of the shelf.bookshelfId,...
         // then returning it .
 
         /// just for instance
+        // the here we take the boks type
         shelf theShelf = new shelf("firstShelf");
         return theShelf;
     }

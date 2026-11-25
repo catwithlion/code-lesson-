@@ -1,0 +1,5 @@
+package LibraryService.store;
+public interface BookDao {
+
+     
+}

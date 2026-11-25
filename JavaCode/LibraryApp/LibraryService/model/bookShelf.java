@@ -1,3 +1,4 @@
+package LibraryService.model;
 public class bookShelf {
 
     // this is simply the repository where the book shelf will be stored .
@@ -10,3 +11,4 @@ public class bookShelf {
      */
 
 }
+ 
