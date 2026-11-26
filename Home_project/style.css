@@ -1,0 +1,73 @@
+/* Inheritance: set the font once, everything inside inherits it */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.sign_up_form {
+  background: #fff;
+  width: 100%;
+  max-width: 380px;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form_group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+/* Specificity: element selector (weak) */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Specificity: class selector (stronger than "input"),
+   so this border color wins when both rules match */
+.invalid {
+  border-color: #d93025;
+}
+
+.valid {
+  border-color: #1e8e3e;
+}
+
+.error {
+  color: #d93025;
+  font-size: 0.8rem;
+  min-height: 1.2em; /* keeps the layout from jumping */
+  margin: 4px 0 0;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8; /* later and more specific (:hover), so it wins on hover */
+}
